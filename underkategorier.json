@@ -1,0 +1,76 @@
+[
+    {
+        "id": 1,
+        "stadname": "El Gitarr",
+        "huvudkategori": 1
+        
+    },{
+        "id": 2,
+        "stadname": "El Bas",
+        "huvudkategori": 2
+    },{
+        "id": 3,
+        "stadname": "Tillbehör",
+        "huvudkategori": 1
+    },{
+        "id": 4,
+        "stadname": "Piano",
+        "huvudkategori": 3
+    },{
+        "id": 5,
+        "stadname": "Synth",
+        "huvudkategori": 3
+    },{
+        "id": 6,
+        "stadname": "Klassisk Gitarr",
+        "huvudkategori": 1
+    },{
+        "id": 7,
+        "stadname": "Strängar",
+        "huvudkategori": 1
+    },{
+        "id": 8,
+        "stadname": "Akustisk Bas",
+        "huvudkategori": 2
+    },{
+        "id": 9,
+        "stadname": "Dragspel",
+        "huvudkategori": 3
+    },{
+        "id": 10,
+        "stadname": "Förstärkare",
+        "huvudkategori": 1
+    },{
+        "id": 11,
+        "stadname": "USB Keyboard",
+        "huvudkategori": 3
+    },{
+        "id": 12,
+        "stadname": "Strängar",
+        "huvudkategori": 2
+    },{
+        "id": 13,
+        "stadname": "Förstärkare",
+        "huvudkategori": 2
+    },{
+        "id": 14,
+        "stadname": "Begagnat",
+        "huvudkategori": 1
+    },{
+        "id": 15,
+        "stadname": "Tillbehör",
+        "huvudkategori": 2
+    },{
+        "id": 15,
+        "stadname": "Trumsett",
+        "huvudkategori": 4
+    },{
+        "id": 15,
+        "stadname": "Digitaltrummor",
+        "huvudkategori": 4
+    },{
+        "id": 15,
+        "stadname": "Slagverk",
+        "huvudkategori": 4
+    }
+]
