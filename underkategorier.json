@@ -1,76 +1,69 @@
 [
     {
-        "id": 1,
-        "stadname": "El Gitarr",
-        "huvudkategori": 1
+        "id": 1.1,
+        "subCategory": "Pokerset 500",
+        "mainCategory": 1
         
     },{
-        "id": 2,
-        "stadname": "El Bas",
-        "huvudkategori": 2
+        "id": 1.2,
+        "subCategory": "Pokerset 300",
+        "mainCategory": 1
     },{
-        "id": 3,
-        "stadname": "Tillbehör",
-        "huvudkategori": 1
+        "id": 1.3,
+        "subCategory": "Pokerset Keramik",
+        "mainCategory": 1
     },{
-        "id": 4,
-        "stadname": "Piano",
-        "huvudkategori": 3
+        "id": 1.4,
+        "subCategory": "Pokerset Plast",
+        "mainCategory": 1
     },{
-        "id": 5,
-        "stadname": "Synth",
-        "huvudkategori": 3
+        "id": 2.1,
+        "subCategory": "Gröna",
+        "mainCategory": 2
     },{
-        "id": 6,
-        "stadname": "Klassisk Gitarr",
-        "huvudkategori": 1
+        "id": 2.2,
+        "subCategory": "Röda",
+        "mainCategory": 2
     },{
-        "id": 7,
-        "stadname": "Strängar",
-        "huvudkategori": 1
+        "id": 2.3,
+        "subCategory": "Svarta",
+        "mainCategory": 2
     },{
-        "id": 8,
-        "stadname": "Akustisk Bas",
-        "huvudkategori": 2
+        "id": 2.4,
+        "subCategory": "Runda bord",
+        "mainCategory": 2
     },{
-        "id": 9,
-        "stadname": "Dragspel",
-        "huvudkategori": 3
+        "id": 3.1,
+        "subCategory": "Kortblandare",
+        "mainCategory": 3
     },{
-        "id": 10,
-        "stadname": "Förstärkare",
-        "huvudkategori": 1
+        "id": 3.2,
+        "subCategory": "Pokermarker",
+        "mainCategory": 3
     },{
-        "id": 11,
-        "stadname": "USB Keyboard",
-        "huvudkategori": 3
+        "id": 3.3,
+        "subCategory": "Kortlekar",
+        "mainCategory": 3
     },{
-        "id": 12,
-        "stadname": "Strängar",
-        "huvudkategori": 2
+        "id": 3.4,
+        "subCategory": "Pokerdukar",
+        "mainCategory": 3
     },{
-        "id": 13,
-        "stadname": "Förstärkare",
-        "huvudkategori": 2
+        "id": 4.1,
+        "subCategory": "Nybörjare",
+        "mainCategory": 4
     },{
-        "id": 14,
-        "stadname": "Begagnat",
-        "huvudkategori": 1
+        "id": 4.2,
+        "subCategory": "Avancerat",
+        "mainCategory": 4
     },{
-        "id": 15,
-        "stadname": "Tillbehör",
-        "huvudkategori": 2
+        "id": 4.3,
+        "subCategory": "Texas Hold'em",
+        "mainCategory": 4
     },{
-        "id": 15,
-        "stadname": "Trumsett",
-        "huvudkategori": 4
-    },{
-        "id": 15,
-        "stadname": "Digitaltrummor",
-        "huvudkategori": 4
-    },{
-        "id": 15,
-        "stadname": "Slagverk",
-        "huvudkategori": 4
+        "id": 4.4,
+        "subCategory": "Omaha Hold'em",
+        "mainCategory": 4
     }
+  
 ]

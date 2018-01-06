@@ -1,10 +1,163 @@
 [
     {
         "id": 1,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "huvudKat": 1,
-        "underKat": 1
+        "prodName": "Monte carlo De Luxe",
+        "prodDesc": "Monte Carlo de Lux är ett pokerset för dig som vill ha det bästa. Gedigen svart aluminium väska med 500 st marker av extra hög kvalitet. De väger 14 gram styck vilket ger en härlig tyngd och spelkänsla. Pokermarkerna är gjorda av en blandning av lera och komposit för att hålla bra och även va härliga att handskas med.",
+        "prodPrice": 999,
+        "prodImg": "pokerset1.jpg",
+        "mainCategory": 1,
+        "subCategory": 1.1
+    },{
+        "id": 2,
+        "prodName": "Casino King Set 500",
+        "prodDesc": "Pokerset med 500 marker som innehåller allt du behöver för dina pokerkvällar.Högkvalitativa 11.5 grams pokermarker som kommer i 5 olika valörer. Pokermarkerna är gjorda av komposit vilket gör dem hållbara och lätta att hantera.",
+        "prodPrice": 699,
+        "prodImg": "pokerset2500.jpg",
+        "mainCategory": 1,
+        "subCategory": 1.1
+    },{
+        "id": 3,
+        "prodName": "Gambler Set 500",
+        "prodDesc": "Pokerset med 500 kvalitativa pokermarker i olika färger. Perfekt för att själv bestämma värdena på dem. Ett pokerset som innehåller allt du behöver för att starta pokerkvällarna. Pokermarkerna är gjorda av komposit vilket gör dem hållbara och lätta att hantera.",
+        "prodPrice": 579,
+        "prodImg": "pokerset3500.jpg",
+        "mainCategory": 1,
+        "subCategory": 1.1
+    },{
+        "id": 4,
+        "prodName": "Standard Set 500",
+        "prodDesc": "Standard Pokerset med 500 kvalitativa pokermarker i olika färger. Perfekt för att själv bestämma värdena på dem. Ett pokerset som innehåller allt du behöver för att starta pokerkvällarna. Pokermarkerna är gjorda av komposit vilket gör dem hållbara och lätta att hantera.",
+        "prodPrice": 349,
+        "prodImg": "pokerset2500.jpg",
+        "mainCategory": 1,
+        "subCategory": 1.1
+    },{
+        "id": 5,
+        "prodName": "Casino King Set 300",
+        "prodDesc": "Pokerset  med 300 marker som innehåller allt du behöver för dina pokerkvällar. Högkvalitativa 11.5 grams pokermarker som kommer i 5 olika valörer. Pokermarkerna är gjorda av komposit vilket gör dem hållbara och lätta att hantera.",
+        "prodPrice": 299,
+        "prodImg": "pokerset2300.jpg",
+        "mainCategory": 1,
+        "subCategory": 1.2
+    },{
+        "id": 6,
+        "prodName": "PokerSet Royal Keramik",
+        "prodDesc": "Pokerset  med 500 keramik marker som innehåller allt du behöver för dina pokerkvällar. Högkvalitativa 11.5 grams pokermarker som kommer i 5 olika valörer. Pokermarkerna är gjorda av komposit vilket gör dem hållbara och lätta att hantera.",
+        "prodPrice": 569,
+        "prodImg": "pokerkeramik.jpg",
+        "mainCategory": 1,
+        "subCategory": 1.3
+    },{
+        "id": 7,
+        "prodName": "Standard PokerSet Plast",
+        "prodDesc": "Pokerset  med 300 marker som innehåller allt du behöver för dina pokerkvällar. Högkvalitativa 11.5 grams pokermarker som kommer i 5 olika valörer.  Pokermarkerna är gjorda av komposit vilket gör dem hållbara och lätta att hantera.",
+        "prodPrice": 999,
+        "prodImg": "pokerplast.jpg",
+        "mainCategory": 1,
+        "subCategory": 1.4
+    },{
+        "id": 8,
+        "prodName": "Tournament Green",
+        "prodDesc": "Högkvalitativt pokerbord med exklusiv kasinokänsla. Har en praktisk betting linje. 10 kopphållare i rostfritt stål. Vattenavstötande svart fodring runt bordet. Hopfällbara stålben.",
+        "prodPrice": 999,
+        "prodImg": "pokerbord1.jpg",
+        "mainCategory": 2,
+        "subCategory": 2.1
+    },{
+        "id": 9,
+        "prodName": "Dealers Choice Green",
+        "prodDesc": "Högkvalitativt pokerbord med exklusiv kasinokänsla. Har en praktisk betting linje. 10 kopphållare i rostfritt stål. Vattenavstötande svart fodring runt bordet. Hopfällbara stålben.",
+        "prodPrice": 2899,
+        "prodImg": "pokerbord2.jpg",
+        "mainCategory": 2,
+        "subCategory": 2.1
+    },{
+        "id": 10,
+        "prodName": "Highroller Red",
+        "prodDesc": "Högkvalitativt pokerbord med exklusiv kasinokänsla. Har en praktisk betting linje. 10 kopphållare i rostfritt stål. Vattenavstötande svart fodring runt bordet. Hopfällbara stålben.",
+        "prodPrice": 2999,
+        "prodImg": "pokerbord3.jpg",
+        "mainCategory": 2,
+        "subCategory": 2.2
+    },{
+        "id": 11,
+        "prodName": "Highroller Black",
+        "prodDesc": "Högkvalitativt pokerbord med exklusiv kasinokänsla. Har en praktisk betting linje. 10 kopphållare i rostfritt stål. Vattenavstötande svart fodring runt bordet. Hopfällbara stålben.",
+        "prodPrice": 2999,
+        "prodImg": "pokerbord4.jpg",
+        "mainCategory": 2,
+        "subCategory": 2.3
+    },{
+        "id": 12,
+        "prodName": "Table Captain Red",
+        "prodDesc": "Högkvalitativt pokerbord med exklusiv kasinokänsla. Har en praktisk betting linje. 10 kopphållare i rostfritt stål. Vattenavstötande svart fodring runt bordet. Hopfällbara stålben.",
+        "prodPrice": 799,
+        "prodImg": "pokerbord5.jpg",
+        "mainCategory": 2,
+        "subCategory": 2.4
+    },{
+        "id": 12,
+        "prodName": "Card Shuffler",
+        "prodDesc": "Automatisk kortblandare för 1 eller 2 kortlekar. Perfekt för den slöa pokerspelaren.",
+        "prodPrice": 159,
+        "prodImg": "kortblandare.jpg",
+        "mainCategory": 3,
+        "subCategory": 3.1
+    },{
+        "id": 13,
+        "prodName": "Monte Carlo $50",
+        "prodDesc": "50 stycken pokermarker av yttersta kvalitet. Monte Carlos 14 grams pokermarker är för den som vill ha det bästa. Dessa pokermarker förmedlar en stark känsla av värde.",
+        "prodPrice": 99,
+        "prodImg": "pokermarker.jpg",
+        "mainCategory": 3,
+        "subCategory": 3.2
+    },{
+        "id": 14,
+        "prodName": "Poker Cards Red 10-Pack",
+        "prodDesc": "kortlekar perfekta för ditt pokerparti. Är gjorda i 100% plast. Mycket hållbara och kan t.o.m. tvättas. Har “jumbo tryck” vilket ger ett behagligt utseende.",
+        "prodPrice": 99,
+        "prodImg": "kortlek.jpg",
+        "mainCategory": 3,
+        "subCategory": 3.3
+    },{
+        "id": 15,
+        "prodName": "Poker Matta",
+        "prodDesc": " Tjock och gedigen pokerduk som gör om matbordet till ett casino på några sekunder. Pokerduken har en glidsäker gummibaksida som gör att den ligger stadigt på bordet.",
+        "prodPrice": 499,
+        "prodImg": "pokerduk.jpg",
+        "mainCategory": 3,
+        "subCategory": 3.4
+    },{
+        "id": 16,
+        "prodName": "How to Play Winning Poker ",
+        "prodDesc": "Perfekta boken för dig som är nybörjare och vill lära dig mer om Poker!",
+        "prodPrice": 89,
+        "prodImg": "pokerbok1.jpg",
+        "mainCategory": 4,
+        "subCategory": 4.1
+    },{
+        "id": 17,
+        "prodName": "Championship Hold'em Tournaments Hands",
+        "prodDesc": "Lär dig spela poker som proffsen!",
+        "prodPrice": 99,
+        "prodImg": "pokerbok2.jpg",
+        "mainCategory": 4,
+        "subCategory": 4.2
+    },{
+        "id": 18,
+        "prodName": "Winner's Guide to Texas Hold'em Poker",
+        "prodDesc": "Perfekta boken för dig som vill lära dig spela Texas Hold'em",
+        "prodPrice": 199,
+        "prodImg": "pokerbok3.jpg",
+        "mainCategory": 4,
+        "subCategory": 4.3
+    },{
+        "id": 19,
+        "prodName": "Bad Beats and Lucky Draws",
+        "prodDesc": "Lär dig spela Omaha med Phil Helmuth!",
+        "prodPrice": 999,
+        "prodImg": "pokerbok4.jpg",
+        "mainCategory": 4,
+        "subCategory": 4.4
     }
 ]

@@ -1,15 +1,15 @@
 [
     {
         "id": 1,
-        "countryname": "Gitarr"
+        "mainCategory": "POKERSET"
     },{
         "id": 2,
-        "countryname": "Bas"
+        "mainCategory": "POKERBORD"
     },{
         "id": 3,
-        "countryname": "Klaviatur"
+        "mainCategory": "POKERTILLBEHÖR"
     },{
         "id": 4,
-        "countryname": "Slagverk"
+        "mainCategory": "POKERBÖCKER"
     }
 ]
