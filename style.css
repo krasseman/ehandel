@@ -202,16 +202,14 @@ margin-right: 10px;
     align-items: flex-start;
     align-content: flex-start;
 }
-.cartSummary{
+.cartTotal{
     width: 260px;
     margin-right: 10px;
 }
 .cartListProdName{
     width: 300px; 
 }
-.cartListRemove a{
-    color: #8c8b8b;
-}
+
 .cartListRemove a:hover{
     color: black;
 }
