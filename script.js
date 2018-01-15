@@ -55,9 +55,6 @@ $(document).ready(function(){
     
         
      
-        $(".cartLink").click(function(){
-            showShoppingCart();
-        });
     
         printSubCat = function(i){      
             $(".subMenuList").html("");    
@@ -153,32 +150,21 @@ $(document).ready(function(){
         
             $(".main").append("<div class='cartList'></div><div class='cartSummary'></div>");
             $(".cartList").append(cartListProdName + cartListProdPrice + cartListRemove);
-    
+            var loginBtn = "<button class='loginBtn' onclick='checkOut()'>Logga in</button>";
             var checkOutButton = "<button class='cartButton' onclick='checkOut()'>Gå till kassan</button>";
-            $(".cartSummary").append(checkOutButton);
-    
+            $(".cartSummary").append(checkOutButton + loginBtn);
         }
     
         delCartItem = function(i){
             shoppingCart.splice(i, 1);
             showShoppingCart();
-            $(".cartCounter").html(shoppingCart.length);
+            $("#counter").html(shoppingCart.length);
             if (shoppingCart.length <= 0){
-                $(".cartLink").css("background-image", "url(img/cart.png)");
+               
             }
         }
     
-            
-    
-    
-        
-    
-    
     }
-        
-        
-        
-        
             
     });
         
