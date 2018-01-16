@@ -217,8 +217,7 @@ li a {
     text-decoration: none;
     margin-left: 10px;
     color: black;
-   
-    border-bottom: 1px solid black;
+   border-bottom: 1px solid black;
     
 }
 
@@ -380,9 +379,6 @@ a:hover {
 
     }
 
-    .cartList {
-
-    }
 
     .productCard {
         margin: auto;
