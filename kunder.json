@@ -1,11 +1,12 @@
 [
-    {
-        "id": 1,
-        "username": "janne@hiveandfive.se",
-        "password": "12345"
-    },{
+   {
         "id": 2,
         "username": "admin",
         "password": "test"
+    },{
+        "id": 1,
+        "username": "janne@hiveandfive.se",
+        "password": "12345"
     }
+
 ]

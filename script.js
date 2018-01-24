@@ -1,7 +1,7 @@
     $(document).ready(function(){
     var mainCatList;
     var shoppingCart = [];
-    var kundlista = [];
+   var kundlista = [];
    
     // Kolla om session storage finns, om inte skapa den.
     if (sessionStorage.shoppingCart == null) {
@@ -11,10 +11,23 @@
         
  }
 
+ if (sessionStorage.kundlista == null) {
+    var json_str = JSON.stringify(kundlista);
+    sessionStorage.kundlista = json_str;
+   
+    
+}
+
+
+
+
 
  // hämta
 
  var parseCartList = JSON.parse(sessionStorage.shoppingCart);
+
+ var parsekundlista = JSON.parse(sessionStorage.kundlista);
+
 
  fetch("./kunder.json")
  .then(function(response) {
@@ -54,12 +67,12 @@
     
        
         var slideIndex = 0;
-        showSlides();
+      //  showSlides();
       
         $("#counter").html(parseCartList.length);
 
         
-        function showSlides() {
+      /*  function showSlides() {
             var i;
             var slides = document.getElementsByClassName("mySlides");
             for (i = 0; i < slides.length; i++) {
@@ -70,9 +83,9 @@
             slides[slideIndex-1].style.display = "block"; 
             setTimeout(showSlides, 3000); // Change image every 2 seconds
         }     
-    
+    */
     function printMainCat(){
-     var kunder = kundlista;
+
     
     
         $(".mainMenuList").append("<li><a href='index.html'>START</a></li>");
@@ -147,24 +160,27 @@
             sessionStorage.shoppingCart = json_str;
         }
         
-    
+    //** Lägg till logga ut knapp här */
         showShoppingCart = function(){
-            $(".main").html("<div class='cartTitle'><h2>Kundvagn</h2></div><hr class='productHR'>");
-    
+            $(".main").html("<div class='cartTitle'><h2 class='kundVagn'>Kundvagn</h2></div><hr class='productHR'>");
+          
+            if (sessionStorage.getItem("userName"))  {
+                
+                    $(".kundVagn").html(sessionStorage.getItem("userName") + 's' + ' ' + 'kundvagn');   
+                }
+
+
             var parseCartList = JSON.parse(sessionStorage.shoppingCart)
             var priceTotal = 55;
             for(var i = 0; i < parseCartList.length; i++) {
                 priceTotal += parseCartList[i].prodPrice;
             }
+           
+        
             $(".cartTitle").append("<h3>Totalpris: " + priceTotal + " kr</h3>");
     
     
-    
-           
-        
-    
-           
-            var cartListProdName = "<ul class='cartListProdName'>";
+              var cartListProdName = "<ul class='cartListProdName'>";
             var cartListProdPrice = "<ul>";
             var cartListRemove = "<ul class='cartListRemove'>";
     
@@ -190,6 +206,9 @@
             var loginBtn = "<button class='loginBtn' onclick='showLogin()'>Logga in</button>";
             var checkOutButton = "<button class='cartButton' onclick='checkOut()'>Gå till kassan</button>";
             $(".cartTotal").append(checkOutButton + loginBtn);
+       
+       
+       
         }
      
 
@@ -199,39 +218,72 @@
          showLogin = function () {
             $(".main").append("<div class='formWrap'></div>");
             
-            var loginForm = "<input type='text' name='Mail' value='Mailadress' class='mailForm'>"
-            var passForm = "<input type='password' name='Lösenord' value='........' class='passwordForm'>"
-            var submit = "<button class='loginBtn' onclick='logIn()'>Logga in</button>";
+            var loginForm = "<input type='text' name='Mail' value='Mailadress' id='mailForm'>"
+            var passForm = "<input type='password' name='Lösenord' value='........' id='passwordForm'>"
+            var submit = "<button class='submitBtn' onclick='checkMail()'>Logga in</button>";
            
            
             $(".formWrap").append(loginForm + passForm + submit);
         }
 
-       /* Inlogg -----------------              
-                logIn = function(){
-                var kunder = kundlista;
+               /** LOGIN FUNKTION */
+                checkMail = function(){
+                    
+                 var parsekundlista = JSON.parse(sessionStorage.kundlista);
                    
                     for(var i = 0; i < kundlista.length; i++){
-                        var kunder = kundlista; 
+                        
                
-                        //Om password och username stämmer loggas användare in och sparas i sessionstorage
-                        if( $(".mailForm").val() == kundlista[i].username && $(".passwordForm").val() == kundlista[i].password){
-                            var kunder = kundlista;  
-                            console.log("yes")
-                            console.log(kunder);
-                            sessionStorage.saveUser = kunder[i].username;
-
-            
-            
-                        //annars visas glömt lösenord
-                            }else{
-                            console.log("no")
-                            var kunder = kundlista;
-                            }       
+                  
+                        if( $("#mailForm").val() == kundlista[i].username){
+                            
+                       
                         }
-                }
+                      
+                        }
+                    
+                for(var i = 0; i < kundlista.length; i++){ 
 
-               */
+                    if( $("#passwordForm").val() == kundlista[i].password){
+                     
+                    }
+                }
+                
+                 for(var i = 0; i < kundlista.length; i++){ 
+                    
+                    if( $("#mailForm").val() == kundlista[i].username && $("#passwordForm").val() == kundlista[i].password){
+                     var name = document.getElementById('mailForm').value;
+                     sessionStorage.setItem("userName", kundlista[i].username);
+                     
+                     $(".kundVagn").html(sessionStorage.getItem("userName") + 's' + ' ' + 'kundvagn');  
+
+
+
+                     
+               
+                      loggedIn();
+                      console.log(parsekundlista)
+     
+              
+                      
+                    }
+                    
+            }
+        }
+            
+        function loggedIn() {
+            var logOut = "<button class='logoutBtn' onclick='logOut()'>Logga ut</button>";
+            $(".formWrap").hide();
+            $(".loginBtn").hide();
+            $(".cartTotal").append(logOut);
+        }
+
+        function logOut() {
+      
+            location.reload();
+        }
+
+
         checkOut = function(){
     
             $(".main").html("<div class='cartTitle'><h2>Tack för ditt köp!</h2></div>");
