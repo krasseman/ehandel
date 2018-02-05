@@ -7,6 +7,10 @@
         "id": 1,
         "username": "janne@hiveandfive.se",
         "password": "12345"
+    },{
+        "id": 3,
+        "username": "jesper",
+        "password": "test"
     }
 
 ]

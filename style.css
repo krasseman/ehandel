@@ -309,6 +309,24 @@ a:hover {
   animation-duration: 1.5s;
 }
 
+.listAdmin {
+width: 1200px;
+display: flex;
+flex-flow: row nowrap;
+justify-content: space-evenly;
+align-items: center;
+margin: auto;
+}
+
+.adminMain{
+    margin: 50px 0px;
+    width: 1200px;
+    min-height: 60vh;
+    margin: auto;
+}   
+
+
+/**  MEDIAQUERIES */ 
 @-webkit-keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}

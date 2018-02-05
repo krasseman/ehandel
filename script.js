@@ -18,10 +18,6 @@
     
 }
 
-
-
-
-
  // hämta
 
  var parseCartList = JSON.parse(sessionStorage.shoppingCart);
@@ -67,12 +63,12 @@
     
        
         var slideIndex = 0;
-      //  showSlides();
+     showSlides();
       
         $("#counter").html(parseCartList.length);
 
         
-      /*  function showSlides() {
+  function showSlides() {
             var i;
             var slides = document.getElementsByClassName("mySlides");
             for (i = 0; i < slides.length; i++) {
@@ -83,7 +79,7 @@
             slides[slideIndex-1].style.display = "block"; 
             setTimeout(showSlides, 3000); // Change image every 2 seconds
         }     
-    */
+   
     function printMainCat(){
 
     
@@ -224,6 +220,7 @@
            
            
             $(".formWrap").append(loginForm + passForm + submit);
+            $(".loginBtn").hide();
         }
 
                /** LOGIN FUNKTION */
@@ -272,22 +269,22 @@
         }
             
         function loggedIn() {
-            var logOut = "<button class='logoutBtn' onclick='logOut()'>Logga ut</button>";
+      
             $(".formWrap").hide();
             $(".loginBtn").hide();
-            $(".cartTotal").append(logOut);
+         
         }
 
-        function logOut() {
-      
-            location.reload();
-        }
 
 
         checkOut = function(){
     
+           
+            sessionStorage.clear();
+            $("#counter").html(parseCartList.length);
+            
             $(".main").html("<div class='cartTitle'><h2>Tack för ditt köp!</h2></div>");
-            console.log(sessionStorage.shoppingCart);
+
         }
     
         delCartItem = function(i){
@@ -297,16 +294,27 @@
            
             var json_str = JSON.stringify(parseCartList);
             sessionStorage.shoppingCart = json_str; 
-            
-            console.log("hej")
+        
     
             showShoppingCart();
             $("#counter").html(parseCartList.length);
-            if (parseCartList.length <= 0){
+            if (parseCartList.length <= 0){ 
                
             }
+        
         }
+        kundLista = function(){
+   
+            $(".adminMain").html("<h3>Kundlista:</h3></br>")
     
+         
+            
+            for(var i = 0; i < kundlista.length; i++) {
+               $(".adminMain").append(kundlista[i].username + "<br>") 
+               
+            }
+        
+        }
     }
             
     });
